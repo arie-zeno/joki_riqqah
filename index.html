@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .menu-utama{
+            border: 1px solid;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .menu-kedua{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            /* border: 1px solid; */
+            padding: 5px;
+            gap: 5px;
+            transform: scale(0);
+            transition: 0.2s;
+        }
+        a{
+            border-radius: 10px;
+            border: 1px solid;
+            padding: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="menu1" class="menu-utama">
+            <h1>RD Madaranti</h1>
+        </div>
+        
+        <div id="menu2" class="menu-kedua">
+            <a href="link1.html">Radier</a>
+            <a href="link2.html">MAP</a>
+            
+        </div>
+    </div>
+<script>
+    let menu1 = document.querySelector("#menu1"),
+        menu2 = document.querySelector("#menu2");
+
+    menu1.addEventListener("click", () => {
+        menu2.style.transform = "scale(1)";
+    })
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script> -->
+
+</body>
+</html>
