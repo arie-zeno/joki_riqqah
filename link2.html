@@ -3,16 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RD-Malaranti</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit-icons.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- UIkit CSS -->
+    <style>
+        .home{
+            height: 100vh;
+            background-color: #131313;
+            background-image: url('img/rd-1.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            /* filter: blur(10px); */
+            backdrop-filter:initial;
+            /* background: rgb(93,181,193); */
+            /* background: linear-gradient(180deg, rgba(93,181,193,1) 0%, rgba(101,203,217,1) 100%); */
+        }
+
+
+
+        /* nav {
+            background-color: rgba(255, 255, 255, 0.605);
+            box-shadow: 0 0 10px ;
+            z-index: 9;
+        } */
+        nav.navbar a {
+            color: white;
+            transition: .2s;
+        }
+
+        nav.navbar a:hover {
+            color: white;
+            text-decoration: none;
+            transform: scale(1.3);
+        }
+
+        nav.navbar a:active {
+            color: white;
+            text-decoration: none;
+            transform: scale(1.3);
+        }
+
+        .tentang {
+            background-color: #131313;
+
+            /* background: rgb(93,181,193);
+            background: linear-gradient(180deg,  rgba(101,203,217,1) 0%, rgba(93,181,193,1) 100%); */
+        }
+
+        footer{
+            padding: 15px;
+            background-color: #131313;
+            color: white;
+            margin: 0;
+        }
+        @media (max-width: 767.98px) {
+            nav.navbar a:hover {
+            transform: scale(1.09);
+        }
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li>beranda</li>
-        <li>beranda</li>
-        <li>beranda</li>
-        <li>beranda</li>
-        <li>beranda</li>
-        <li>beranda</li>
-    </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span style="font-family: 'Bookman Old Style'; color: red;"> RD</span>-<span style="font-family: 'Matura M7 Script Capitals'; color: rgb(25, 227, 25);">Malaranti</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tentang">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kerjasama">Kerja Sama</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#galeri" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Galeri
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark ">
+                        <li><a class="dropdown-item" href="#foto">Foto</a></li>
+                        <li><a class="dropdown-item" href="#video">Video</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Karir
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Lamaran Kerja</a></li>
+                        <li><a class="dropdown-item" href="#">PSA</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lokasi">Lokasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </li>
+          </div>
+        </div>
+      </nav>
+
+   <div id="home" class="home d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center" style="background-color: #000000cd; width: 100%; height: 100%;">
+            <div class="container d-flex justify-content-center align-items-center text-light text-shadow">
+
+                <div class="col-sm-6 d-flex flex-column align-items-center justify-content-center">
+                    <img class="img-fluid" src="/img/logo-rd.png" width="300" alt="">
+
+                    <!-- <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eos quaerat, numquam enim dignissimos temporibus molestiae totam consectetur quo magni id quia, eius vel fuga voluptatibus. Fugit, et? Reprehenderit, eius?</h2> -->
+                    <h6 class="text-center fw-bolder">Passanger Handling Premium</h6>
+                    <a href="#tentang" style="color: white; position: absolute; bottom: 15px;">
+
+                        <svg class="mt-5" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tentang pb-5">
+        <div class="container text-light justify-content-center align-items-center p-4">
+            
+            <h2 id="tentang" class="text-center mt-4 fw-bolder">Tentang Kami</h2>
+            <p class="text-center fw-light fs-5 mt-4">RD-Malaranti Airport Handling adalah salah satu perusahaan yang berpengalaman dalam Handling penumpang pesawat udara baik domestik maupun Internasional, pelaku usaha ataupun para jamaah haji dan umroh. 
+                Anda maupun para pelanggan terhormat tidak perlu repot dan ribet, biarkan kami yang menjalankan.</p>
+        </div>
+        
+      
+    </div>
+
+    <div id="galeri" class="galeri py-5">
+        <div class="foto">
+            <div class="container">
+                <h2 class="text-center my-4 fw-bolder" id="foto">Foto</h2>
+                <div class="uk-position-relative uk-visible-toggle uk-dark " tabindex="-1" uk-slider="center: true ;autoplay:true; autoplay-interval: 3000;"   >
+
+                    <ul class="uk-slider-items uk-grid " uk-lightbox="animation: slide" >
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-1.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-1.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-2.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-2.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-3.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-3.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-4.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-4.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-5.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-5.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-6.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-6.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-7.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-7.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-8.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-8.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-8.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-8.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-9.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-9.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-10.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-10.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                <a class="uk-inline" href="img/rd-11.jpg" data-caption="Caption 1">
+                                    <img src="img/rd-11.jpg" alt="" style="max-height:400px;">
+                                </a>
+                             </div>
+                      
+                    </ul>
+                
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="video">
+            <div class="container">
+                <h2 class="text-center mt-4 fw-bolder my-5" id="video">Video</h2>
+                <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1" uk-slider="center: true"  >
+
+                    <ul class="uk-slider-items uk-grid ">
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                
+                                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/eY2crdAc6OI?si=u5NxKN27Iu4IxIR5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+                                
+                            </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">                      
+                                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/QBXALGqARZs?si=nRy-L3-r62dNWcBf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+                            </div>
+                        </li>
+                        <li class="uk-width-3-4">
+                            <div class="uk-panel">
+                                
+                                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/qmF0l-qkgdw?si=dT2D3ZSaU_5YpWVt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <a class="uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="lokasi">
+        <div class="container">
+            <h2 class="text-center my-4 fw-bolder" id="lokasi">Lokasi</h2>
+            <div class="row">
+                <div class="col-sm-4 mb-3">
+                    <div class="card" style="width: 100%;">
+                        <iframe  class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78007.4259147184!2d114.66171430999424!3d-3.338286104730118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1693558118166!5m2!1sen!2sid" style="border:0; width:100%;height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="card-body">
+                            <h6 class="fw-bolder">Banjarmasin</h6>
+                          <p class="card-text">Jln kasturi II kompleks karunia indah-3 Gg B2 no 5 Kel Syamsudin Noor kec. landasan Ulin, Banjarbaru</p>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-sm-4 mb-3">
+                    <div class="card" style="width: 100%;">
+                        <iframe  class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78007.4259147184!2d114.66171430999424!3d-3.338286104730118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1693558118166!5m2!1sen!2sid" style="border:0; width:100%;height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="card-body">
+                            <h6 class="fw-bolder">Makassar</h6>
+                          <p class="card-text">Jl. Poros laniang kompleks ruko pelangi blok f 18, bumi tamalanrea permai (btp)</p>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-sm-4 mb-3">
+                    <div class="card" style="width: 100%;">
+                        <iframe  class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78007.4259147184!2d114.66171430999424!3d-3.338286104730118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1693558118166!5m2!1sen!2sid" style="border:0; width:100%;height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="card-body">
+                            <h6 class="fw-bolder">Yogyakarta Internasional Airport </h6>
+                          <p class="card-text">Relokasi Janten No.22 jomboran Kec.Temon Kab.kulonprogo Yogyakarta</p>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-sm-4 mb-3">
+                    <div class="card" style="width: 100%;">
+                        <iframe  class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78007.4259147184!2d114.66171430999424!3d-3.338286104730118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1693558118166!5m2!1sen!2sid" style="border:0; width:100%;height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="card-body">
+                            <h6 class="fw-bolder">Medan</h6>
+                          <p class="card-text">Jln sultan serdang 70 D 
+                            Telaga sari,kecamatan tanjung morawa samping Gg.perdana
+                            Medan</p>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-sm-4 mb-3">
+                    <div class="card" style="width: 100%;">
+                        <iframe  class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78007.4259147184!2d114.66171430999424!3d-3.338286104730118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1693558118166!5m2!1sen!2sid" style="border:0; width:100%;height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="card-body">
+                            <h6 class="fw-bolder">Solo</h6>
+                          <p class="card-text">Bandara Adi Sumarmo-Solo</p>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-sm-4 mb-3">
+                    <div class="card" style="width: 100%;">
+                        <iframe  class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78007.4259147184!2d114.66171430999424!3d-3.338286104730118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1693558118166!5m2!1sen!2sid" style="border:0; width:100%;height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="card-body">
+                            <h6 class="fw-bolder">Surabaya</h6>
+                          <p class="card-text">Perumahan juanda regency Blok.G No.8 Sedati, kec.Pabean, kab.Sidoarjo Jawa Timur</p>
+                        </div>
+                      </div>
+
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="kontak ">
+        <div class="container">
+            <h2 class="text-center my-4 fw-bolder" id="kontak">kontak</h2>
+        </div>
+    </div>
+
+    <footer class="mb-0">
+        <div class="container">
+            RD-Malaranti 2023 
+
+        </div>
+    </footer>
+<script>
+    let nav = document.querySelector("nav");
+
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY > 1632){
+            nav.style.background = "#13131390"
+            nav.style.boxShadow = "0 0 10px #13131390"
+        }else{
+            nav.style.background = "unset"
+            nav.style.boxShadow = "unset"
+
+        }
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 </html>
