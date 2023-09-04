@@ -56,10 +56,20 @@
             background: linear-gradient(180deg,  rgba(101,203,217,1) 0%, rgba(93,181,193,1) 100%); */
         }
 
+        .galeri, .lokasi{
+            background-image: url('img/slide1.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .lokasi{
+            background-color: #131313;
+        }
         footer{
             padding: 15px;
-            background-color: #131313;
-            color: white;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
             margin: 0;
         }
         @media (max-width: 767.98px) {
@@ -93,7 +103,7 @@
                         <li><a class="dropdown-item" href="#video">Video</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Pendaftaran
                     </a>
@@ -102,13 +112,14 @@
                         <li><a class="dropdown-item" href="#">Dangerous Goods</a></li>
                         <li><a class="dropdown-item" href="#">PSA</a></li>
                     </ul>
+                </li> -->
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeSgaAWIn5_k3r9yvSzX0dUSd3qqxDWOuNmXjyZtmVIKMO25Q/viewform">Pendaftaran</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#lokasi">Lokasi</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontak">Kontak</a>
-                </li>
+                
           </div>
         </div>
       </nav>
@@ -136,7 +147,7 @@
 
     </div>
 
-    <div class="tentang pb-5">
+    <div class="tentang pb-5 ">
         <div class="container text-light justify-content-center align-items-center p-4">
             
             <h2 id="tentang" class="text-center mt-4 fw-bolder">Tentang Kami</h2>
@@ -144,7 +155,7 @@
                 Melalui kompetensi sistem manajemen pengamanan menjadikan kami sebuah kekuatan yang handal untuk mewujudkan Good Corporate Governance dan Operasional Excellence. Dengan keberadaan Aviation Training Center yang berizin resmi serta profesional dalam pengelolaan diklat tentunya akan membantu terlaksananya pencapaian SDM yang memiliki standarisasi di bidangnya.</p>
         </div>
         
-        <div class="row container  mx-auto mt-5">
+        <div class="row container  mx-auto mt-5 ">
 
             <div class="col-sm-6 text-light fw-lighter">
                 <h2>Visi</h2>
@@ -162,11 +173,13 @@
         </div>
     </div>
 
-    <div id="galeri" class="galeri py-5">
-        <div class="foto">
-            <div class="container">
-                <h2 class="text-center my-4 fw-bolder" id="foto">Foto</h2>
-                <div class="uk-position-relative uk-visible-toggle uk-dark " tabindex="-1" uk-slider="center: true ;autoplay:true; autoplay-interval: 3000;"   >
+    <div id="galeri" class="galeri text-light">
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: #000000cd; width: 100%; height: 100%;">
+
+        <div class="foto my-5 ">
+            <div class="container ">
+                <h2 class="text-center my-4 fw-bolder " id="foto">Foto</h2>
+                <div class="uk-position-relative uk-light " tabindex="-1" uk-slider="center: true ;autoplay:true; autoplay-interval: 3000;"   >
 
                     <ul class="uk-slider-items uk-grid " uk-lightbox="animation: slide" >
                         <li class="uk-width-3-4">
@@ -290,28 +303,44 @@
             </div>
         </div>
         
-        <div class="video">
-            <div class="container">
-                <h2 class="text-center mt-4 fw-bolder my-5" id="video">Video</h2>
-                <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1" uk-slider="center: true"  >
+        <div class="video border-top">
+            <div class="container my-4">
+                <h2 class="text-center my-4 fw-bolder my-5" id="video">Video</h2>
+                <div class="uk-position-relative  uk-light " tabindex="-1" uk-slider >
 
-                    <ul class="uk-slider-items uk-grid ">
-                        <li class="uk-width-3-4">
+                    <ul class="uk-slider-items ">
+                        <li >
                             <div class="uk-panel">
                                 
-                                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/eY2crdAc6OI?si=u5NxKN27Iu4IxIR5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+                                <video src="video/radior/1.mp4" width="1800" height="1200" loop playsinline uk-video="autoplay: false" controls uk-responsive></video>
                                 
                             </div>
                         </li>
-                        <li class="uk-width-3-4">
-                            <div class="uk-panel">                      
-                                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/QBXALGqARZs?si=nRy-L3-r62dNWcBf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
-                            </div>
-                        </li>
-                        <li class="uk-width-3-4">
+                        <li >
                             <div class="uk-panel">
                                 
-                                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/qmF0l-qkgdw?si=dT2D3ZSaU_5YpWVt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen uk-responsive uk-video="autoplay: false"></iframe>
+                                <video src="video/radior/2.mp4" width="1800" height="1200" loop playsinline uk-video="autoplay: false" controls uk-responsive></video>
+                                
+                            </div>
+                        </li>
+                        <li >
+                            <div class="uk-panel">
+                                
+                                <video src="video/radior/3.mp4" width="1800" height="1200" loop playsinline uk-video="autoplay: false" controls uk-responsive></video>
+                                
+                            </div>
+                        </li>
+                        <li >
+                            <div class="uk-panel">
+                                
+                                <video src="video/radior/4.mp4" width="1800" height="1200" loop playsinline uk-video="autoplay: false" controls uk-responsive></video>
+                                
+                            </div>
+                        </li>
+                        <li >
+                            <div class="uk-panel">
+                                
+                                <video src="video/radior/5.mp4" width="1800" height="1200" loop playsinline uk-video="autoplay: false" controls uk-responsive></video>
                                 
                             </div>
                         </li>
@@ -323,25 +352,29 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
 
     
-    <div class="lokasi">
+    <div class="lokasi py-5">
         <div class="container">
-            <h2 class="text-center my-4 fw-bolder" id="lokasi">Lokasi</h2>
+            <h2 class="text-center fw-bolder mb-4 text-light" id="lokasi">Lokasi</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78007.4259147184!2d114.66171430999424!3d-3.338286104730118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1693558118166!5m2!1sen!2sid" style="border:0; width:100%;height: 600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    
-    <div class="kontak ">
-        <div class="container">
-            <h2 class="text-center my-4 fw-bolder" id="kontak">kontak</h2>
-        </div>
-    </div>
+
 
     <footer class="mb-0">
-        <div class="container">
-            ©Radior Dirgantara 2023 
+        <div class="container d-flex">
+            <div class="col-sm-6">
+                ©Radior Dirgantara 2023 
+            </div>
+            <div class="col-sm-6 text-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                  </svg> radior_99@yahoo.com 
+            </div>
 
         </div>
     </footer>
@@ -349,9 +382,9 @@
     let nav = document.querySelector("nav");
 
     window.addEventListener("scroll", ()=>{
-        if(window.scrollY > 1632){
+        if(window.scrollY > 1480){
             nav.style.background = "#13131390"
-            nav.style.boxShadow = "0 0 10px #13131390"
+            nav.style.boxShadow = "0 0 15px #ffffff90"
         }else{
             nav.style.background = "unset"
             nav.style.boxShadow = "unset"
